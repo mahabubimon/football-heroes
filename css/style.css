@@ -18,6 +18,7 @@ body {
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
+  position: relative;
 }
 
 ul li {
@@ -139,6 +140,51 @@ header {
   color: #6c6c6c;
 }
 
+/* membership css  */
+
+#membership {
+  background-color: #5352ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+#membership h2 {
+  font-size: 4rem;
+  color: #e02c6d;
+}
+
+#membership label {
+  font-size: 2.4rem;
+}
+
+#membership input {
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#membership button {
+  height: 3rem;
+  width: 10rem;
+  background-color: #e02c6d;
+  margin-top: 2rem;
+  border: 0;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#membership button a {
+  font-size: 2rem;
+}
+
 /* footer css */
 
 footer {
@@ -146,8 +192,6 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 4rem 0;
-  /* justify-content: center; */
-  /* margin: 2rem auto; */
 }
 footer img {
   height: 11rem;
@@ -168,6 +212,21 @@ footer p {
   font-size: 2rem;
 }
 
+.back-top {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: #e02c6d;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: 6rem;
+  bottom: 6rem;
+  position: fixed;
+}
 /* responsive css  */
 
 @media only screen and (max-width:48rem) {
@@ -199,6 +258,10 @@ footer p {
     display: grid;
     grid-template-columns: 1fr;
     margin: 2rem;
+  }
+
+  #membership {
+    width: 46rem;
   }
 
   footer img {
