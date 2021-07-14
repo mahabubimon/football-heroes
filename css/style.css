@@ -70,6 +70,23 @@ header {
   -o-border-radius: 1rem;
 }
 
+.btn-watch i {
+  transition: transform 1s linear,padding-right 1s linear;
+  -webkit-transition: transform 1s linear,padding-right 1s linear;
+  -moz-transition: transform 1s linear,padding-right 1s linear;
+  -ms-transition: transform 1s linear,padding-right 1s linear;
+  -o-transition: transform 1s linear,padding-right 1s linear;
+}
+
+#home:hover i{
+  padding-right: 4rem;
+  transform: translateX(6rem);
+  -webkit-transform: translateX(6rem);
+  -moz-transform: translateX(6rem);
+  -ms-transform: translateX(6rem);
+  -o-transform: translateX(6rem);
+}
+
 .banner img {
   height: 46rem;
   width: 56rem;
@@ -144,9 +161,51 @@ footer img {
 .social-link .fab {
   color: #e02c6d;
   font-size: 3rem;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 footer p {
   font-size: 2rem;
 }
+
+/* responsive css  */
+
+@media only screen and (max-width:48rem) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: auto;
+  }
+  
+  #home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 4.2rem;
+    margin: 1rem;
+  }
+  
+  .banner img {
+    height: 46rem;
+    width: 38rem;
+    padding: 1rem;
+  }
+
+  .players {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+  }
+
+  footer img {
+    height: 8rem;
+    width: 36rem;
+  }
+}
+
+
+
